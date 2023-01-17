@@ -1,28 +1,28 @@
-<div *ngIf="course" class="card" [ngClass]="'beginner intermediate'">
+<!-- String: <div *ngIf="course" class="card" [ngClass]="'beginner intermediate'">-->
+<!-- Array: <div *ngIf="course" class="card" [ngClass]="['beginner', 'intermediate'">-->
+<!-- Object:-->
+<div
+  *ngIf="course"
+  class="card"
+  [ngClass]="{ beginner: true, intermediate: false }"
+>
   <div class="card__header">
     <h3 class="card__title">
-      <!--{{ cardIndex + ') ' + course.description }}-->
-      <!--{{ cardIndex + ') ' + course?.description }}-->
       {{ cardIndex + ') ' + course.description }}
     </h3>
   </div>
   <div class="card__content">
     <div class="card__image">
-      <!--<img *ngIf="false" [src]="course.iconUrl" [alt]="course.description" />-->
-      <!--<img *ngIf="course.iconUrl" [src]="course.iconUrl" [alt]="course.description" />-->
+      <ng-template #noImage>
+        <p>No image is available</p>
+      </ng-template>
       <img
         *ngIf="isImageVisible(); else noImage"
         [src]="course.iconUrl"
         [alt]="course.description"
       />
-
-      <ng-template #noImage>
-        <p>No image is available</p>
-      </ng-template>
     </div>
     <p class="card__description">
-      <!--{{ course.longDescription }}-->
-      <!--{{ course?.longDescription }}-->
       {{ course.longDescription }}
     </p>
   </div>
