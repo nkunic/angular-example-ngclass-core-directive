@@ -23,7 +23,7 @@ export class CardComponent {
     return this.course && this.course.iconUrl;
   }
 
-  cardClasses() {
+  //cardClasses() {
     //return {
     //'beginner': true,
     //'intermediate': false,
@@ -35,12 +35,12 @@ export class CardComponent {
     //};
     //if (this.course.category == 'BEGINNER') {
     //  return ['beginner'];
-    if (this.course.category == 'BEGINNER') {
-      return 'beginner';
-    } else if (this.course.category == 'INTERMEDIATE') {
-      return 'intermediate';
-    } else if (this.course.category == 'ADVANCED') {
-      return 'advanced';
-    }
-  }
+    //if (this.course.category == 'BEGINNER') {
+    //  return 'beginner';
+    //} else if (this.course.category == 'INTERMEDIATE') {
+    //  return 'intermediate';
+    //} else if (this.course.category == 'ADVANCED') {
+    //  return 'advanced';
+    //}
+  //}
 }

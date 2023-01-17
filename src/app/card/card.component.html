@@ -6,7 +6,16 @@
   class="card"
   [ngClass]="{ 'beginner': true, 'intermediate': false }"
 >-->
-<div *ngIf="course" class="card" [ngClass]="cardClasses()">
+<!-- Function: <div *ngIf="course" class="card" [ngClass]="cardClasses()">-->
+<div
+*ngIf="course"
+class="card"
+[ngClass]="[
+  course.category == 'BEGINNER' ? 'beginner' : '',
+  course.category == 'INTERMEDIATE' ? 'intermediate' : '',
+  course.category == 'ADVANCED' ? 'advanced' : ''
+]"
+>
   <div class="card__header">
     <h3 class="card__title">
       {{ cardIndex + ') ' + course.description }}
