@@ -1,0 +1,47 @@
+.card {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid black;
+
+  &.beginner {
+    background-color: lightgreen;
+  }
+  &.intermediate {
+    background-color: lightsalmon;
+  }
+
+  .card__header {
+    .card__title {
+      margin-top: 0;
+    }
+  }
+
+  .card__content {
+    .card__image {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .card__button {
+      cursor: pointer;
+      color: white;
+      border: none;
+      padding: 0.3125rem 0.625rem;
+      &.card__button--standard {
+        background-color: GREEN;
+      }
+    }
+
+    button + button {
+      margin-left: 1rem;
+    }
+  }
+}

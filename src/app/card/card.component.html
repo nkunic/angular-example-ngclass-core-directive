@@ -1,0 +1,37 @@
+<div *ngIf="course" class="card" [ngClass]="'beginner intermediate'">
+  <div class="card__header">
+    <h3 class="card__title">
+      <!--{{ cardIndex + ') ' + course.description }}-->
+      <!--{{ cardIndex + ') ' + course?.description }}-->
+      {{ cardIndex + ') ' + course.description }}
+    </h3>
+  </div>
+  <div class="card__content">
+    <div class="card__image">
+      <!--<img *ngIf="false" [src]="course.iconUrl" [alt]="course.description" />-->
+      <!--<img *ngIf="course.iconUrl" [src]="course.iconUrl" [alt]="course.description" />-->
+      <img
+        *ngIf="isImageVisible(); else noImage"
+        [src]="course.iconUrl"
+        [alt]="course.description"
+      />
+
+      <ng-template #noImage>
+        <p>No image is available</p>
+      </ng-template>
+    </div>
+    <p class="card__description">
+      <!--{{ course.longDescription }}-->
+      <!--{{ course?.longDescription }}-->
+      {{ course.longDescription }}
+    </p>
+  </div>
+  <div class="card__footer">
+    <button
+      class="card__button card__button--standard"
+      (click)="onCustomButtonClicked()"
+    >
+      Custom browser event
+    </button>
+  </div>
+</div>

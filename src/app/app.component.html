@@ -1,0 +1,11 @@
+<h1>ANGULAR ngClass Core Directive</h1>
+<h2>Conditional styles</h2>
+
+<div class="cards">
+  <app-card
+    *ngFor="let course of courses; index as i"
+    [cardIndex]="i + 1"
+    [course]="course"
+    (customEventClicked)="onCustomEventClicked($event)"
+  ></app-card>
+</div>
