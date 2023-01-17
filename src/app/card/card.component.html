@@ -1,11 +1,12 @@
 <!-- String: <div *ngIf="course" class="card" [ngClass]="'beginner intermediate'">-->
-<!-- Array: <div *ngIf="course" class="card" [ngClass]="['beginner', 'intermediate'">-->
-<!-- Object:-->
+<!-- Array of strings: <div *ngIf="course" class="card" [ngClass]="['beginner', 'intermediate'">-->
+<!-- Object:
 <div
   *ngIf="course"
   class="card"
-  [ngClass]="{ beginner: true, intermediate: false }"
->
+  [ngClass]="{ 'beginner': true, 'intermediate': false }"
+>-->
+<div *ngIf="course" class="card" [ngClass]="cardClasses()">
   <div class="card__header">
     <h3 class="card__title">
       {{ cardIndex + ') ' + course.description }}

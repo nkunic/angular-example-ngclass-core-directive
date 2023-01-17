@@ -11,17 +11,27 @@ export class CardComponent {
 
   @Input() cardIndex: number;
 
-  // @Output() customEventClicked = new EventEmitter<Course>();
   @Output('customEventClicked') customEventEmitter = new EventEmitter<Course>();
 
   onCustomButtonClicked() {
     console.log('Card component - custom browser event clicked...');
 
-    // this.customEventClicked.emit(this.course);
     this.customEventEmitter.emit(this.course);
   }
 
   isImageVisible() {
     return this.course && this.course.iconUrl;
+  }
+
+  cardClasses() {
+    return {
+      //'beginner': true,
+      //'intermediate': false,
+      //beginner: true,
+      //intermediate: false,
+      beginner: this.course.category == 'BEGINNER',
+      intermediate: this.course.category == 'INTERMEDIATE',
+      advanced: this.course.category == 'ADVANCED',
+    };
   }
 }
