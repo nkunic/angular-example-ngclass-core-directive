@@ -24,14 +24,23 @@ export class CardComponent {
   }
 
   cardClasses() {
-    return {
-      //'beginner': true,
-      //'intermediate': false,
-      //beginner: true,
-      //intermediate: false,
-      beginner: this.course.category == 'BEGINNER',
-      intermediate: this.course.category == 'INTERMEDIATE',
-      advanced: this.course.category == 'ADVANCED',
-    };
+    //return {
+    //'beginner': true,
+    //'intermediate': false,
+    //beginner: true,
+    //intermediate: false,
+    //beginner: this.course.category == 'BEGINNER',
+    //intermediate: this.course.category == 'INTERMEDIATE',
+    //advanced: this.course.category == 'ADVANCED',
+    //};
+    //if (this.course.category == 'BEGINNER') {
+    //  return ['beginner'];
+    if (this.course.category == 'BEGINNER') {
+      return 'beginner';
+    } else if (this.course.category == 'INTERMEDIATE') {
+      return 'intermediate';
+    } else if (this.course.category == 'ADVANCED') {
+      return 'advanced';
+    }
   }
 }
