@@ -24,23 +24,21 @@ export class CardComponent {
   }
 
   //cardClasses() {
+
     //return {
-    //'beginner': true,
-    //'intermediate': false,
-    //beginner: true,
-    //intermediate: false,
-    //beginner: this.course.category == 'BEGINNER',
-    //intermediate: this.course.category == 'INTERMEDIATE',
-    //advanced: this.course.category == 'ADVANCED',
+      // 'card--beginner': true,
+      // 'card--intermediate': false,
+      // 'card--advanced': false,
+
+      // 'card--beginner': this.course.category == 'BEGINNER',
+      // 'card--intermediate': this.course.category == 'INTERMEDIATE',
+      // 'card--advanced': this.course.category == 'ADVANCED',
     //};
-    //if (this.course.category == 'BEGINNER') {
-    //  return ['beginner'];
-    //if (this.course.category == 'BEGINNER') {
-    //  return 'beginner';
-    //} else if (this.course.category == 'INTERMEDIATE') {
-    //  return 'intermediate';
-    //} else if (this.course.category == 'ADVANCED') {
-    //  return 'advanced';
-    //}
+
+    // if (this.course.category == 'BEGINNER') { return ['card--beginner']; }
+    // if (this.course.category == 'BEGINNER') { return 'card--beginner'; }
+    // else if (this.course.category == 'INTERMEDIATE') { return 'card--intermediate'; }
+    // else if (this.course.category == 'ADVANCED') { return 'card--advanced'; }
+
   //}
 }
