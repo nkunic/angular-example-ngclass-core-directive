@@ -3,13 +3,13 @@
   padding: 1.25rem;
   border: 1px solid black;
 
-  &.beginner {
+  &.card--beginner {
     background-color: lightgreen;
   }
-  &.intermediate {
+  &.card--intermediate {
     background-color: lightsalmon;
   }
-  &.advanced {
+  &.card--advanced {
     background-color: lightblue;
   }
 

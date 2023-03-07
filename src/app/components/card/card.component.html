@@ -1,28 +1,15 @@
-<!-- 
-  String: 
-  <div *ngIf="course" class="card" [ngClass]="'beginner intermediate'">
-    -->
-<!-- 
-  Array of strings: 
-  <div *ngIf="course" class="card" [ngClass]="['beginner', 'intermediate'">
-    -->
-<!-- 
-  Object:
-  <div
-    *ngIf="course"
-    class="card"
-    [ngClass]="{ 'beginner': true, 'intermediate': false }"
-  >
--->
-<!-- Function: <div *ngIf="course" class="card" [ngClass]="cardClasses()">-->
+<!-- String:            [ngClass]="' beginner intermediate' "                     -->
+<!-- Array of strings:  [ngClass]="[ 'beginner', 'intermediate'"                  -->
+<!-- Object:            [ngClass]="{ 'beginner': true, 'intermediate': false }"   -->
+<!-- Function:          [ngClass]="cardClasses()"                                 -->
 <div
-*ngIf="course"
-class="card"
-[ngClass]="[
-  course.category == 'BEGINNER' ? 'beginner' : '',
-  course.category == 'INTERMEDIATE' ? 'intermediate' : '',
-  course.category == 'ADVANCED' ? 'advanced' : ''
-]"
+  *ngIf="course"
+  class="card"
+  [ngClass]="[
+    course.category == 'BEGINNER' ? 'card--beginner' : '',
+    course.category == 'INTERMEDIATE' ? 'card--intermediate' : '',
+    course.category == 'ADVANCED' ? 'card--advanced' : ''
+  ]"
 >
   <div class="card__header">
     <h3 class="card__title">
@@ -31,14 +18,14 @@ class="card"
   </div>
   <div class="card__content">
     <div class="card__image">
-      <ng-template #noImage>
-        <p>No image is available</p>
-      </ng-template>
       <img
         *ngIf="isImageVisible(); else noImage"
         [src]="course.iconUrl"
         [alt]="course.title"
       />
+      <ng-template #noImage>
+        <p>No image is available</p>
+      </ng-template>
     </div>
     <p class="card__description">
       {{ course.description }}
