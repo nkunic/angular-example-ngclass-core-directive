@@ -3,18 +3,18 @@ export const COURSES: any = [
 
   {
     id: 1,
-    description: 'Angular Core Deep Dive',
-    longDescription:
+    title: 'Angular Core Deep Dive',
+    description:
       'A detailed walk-through of the most important part of Angular - the Core and Common modules',
     category: 'INTERMEDIATE',
     lessonsCount: 10,
   },
   {
     id: 2,
-    description: 'RxJs In Practice Course',
+    title: 'RxJs In Practice Course',
     iconUrl:
       'https://s3-us-west-1.amazonaws.com/angular-university/course-images/rxjs-in-practice-course.png',
-    longDescription:
+    description:
       'Understand the RxJs Observable pattern, learn the RxJs Operators via practical examples',
     category: 'BEGINNER',
     lessonsCount: 10,
@@ -22,8 +22,8 @@ export const COURSES: any = [
 
   {
     id: 3,
-    description: 'NgRx In Depth',
-    longDescription:
+    title: 'NgRx In Depth',
+    description:
       'Learn the modern Ngrx Ecosystem, including Store, Effects, Router Store, Ngrx Entity, Dev Tools and Schematics.',
     iconUrl:
       'https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-ngrx-course.png',
@@ -32,18 +32,18 @@ export const COURSES: any = [
 
   {
     id: 4,
-    description: 'Angular for Beginners',
+    title: 'Angular for Beginners',
     iconUrl:
       'https://angular-academy.s3.amazonaws.com/thumbnails/angular2-for-beginners-small-v2.png',
-    longDescription:
+    description:
       "Establish a solid layer of fundamentals, learn what's under the hood of Angular",
     category: 'BEGINNER',
     lessonsCount: 10,
   },
   {
     id: 5,
-    description: 'Angular Security Course',
-    longDescription:
+    title: 'Angular Security Course',
+    description:
       'Learn Web Security Fundamentals and apply them to defend an Angular / Node Application from multiple types of attacks.',
     iconUrl:
       'https://s3-us-west-1.amazonaws.com/angular-university/course-images/security-cover-small-v2.png',
@@ -52,8 +52,8 @@ export const COURSES: any = [
   },
   {
     id: 6,
-    description: 'Angular PWA Course',
-    longDescription:
+    title: 'Angular PWA Course',
+    description:
       'Learn Angular Progressive Web Applications, build the future of the Web Today.',
     iconUrl:
       'https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-pwa-course.png',
@@ -62,8 +62,8 @@ export const COURSES: any = [
   },
   {
     id: 7,
-    description: 'Angular Advanced Course',
-    longDescription:
+    title: 'Angular Advanced Course',
+    description:
       'Learn Advanced Angular functionality typically used in Library Development. Advanced Components, Directives, Testing, Npm',
     iconUrl:
       'https://angular-academy.s3.amazonaws.com/thumbnails/advanced_angular-small-v3.png',
@@ -71,8 +71,8 @@ export const COURSES: any = [
   },
   {
     id: 8,
-    description: 'Complete Typescript Course',
-    longDescription:
+    title: 'Complete Typescript Course',
+    description:
       'Complete Guide to Typescript From Scratch: Learn the language in-depth and use it to build a Node REST API.',
     iconUrl:
       'https://angular-academy.s3.amazonaws.com/thumbnails/typescript-2-small.png',
@@ -80,8 +80,8 @@ export const COURSES: any = [
   },
   {
     id: 9,
-    description: 'Angular Architecture Course',
-    longDescription:
+    title: 'Angular Architecture Course',
+    description:
       'Learn the core RxJs Observable Pattern as well and many other Design Patterns for building Reactive Angular Applications.',
     iconUrl:
       'https://s3-us-west-1.amazonaws.com/angular-academy/blog/images/rxjs-reactive-patterns-small.png',
@@ -89,10 +89,10 @@ export const COURSES: any = [
   },
   {
     id: 10,
-    description: 'Angular Material Course',
+    title: 'Angular Material Course',
     iconUrl:
       'https://s3-us-west-1.amazonaws.com/angular-university/course-images/material_design.png',
-    longDescription:
+    description:
       'Build Applications with the official Angular Widget Library',
     category: 'ADVANCED',
   },

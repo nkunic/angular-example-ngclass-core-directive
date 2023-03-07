@@ -1,11 +1,19 @@
-<!-- String: <div *ngIf="course" class="card" [ngClass]="'beginner intermediate'">-->
-<!-- Array of strings: <div *ngIf="course" class="card" [ngClass]="['beginner', 'intermediate'">-->
-<!-- Object:
-<div
-  *ngIf="course"
-  class="card"
-  [ngClass]="{ 'beginner': true, 'intermediate': false }"
->-->
+<!-- 
+  String: 
+  <div *ngIf="course" class="card" [ngClass]="'beginner intermediate'">
+    -->
+<!-- 
+  Array of strings: 
+  <div *ngIf="course" class="card" [ngClass]="['beginner', 'intermediate'">
+    -->
+<!-- 
+  Object:
+  <div
+    *ngIf="course"
+    class="card"
+    [ngClass]="{ 'beginner': true, 'intermediate': false }"
+  >
+-->
 <!-- Function: <div *ngIf="course" class="card" [ngClass]="cardClasses()">-->
 <div
 *ngIf="course"
@@ -18,7 +26,7 @@ class="card"
 >
   <div class="card__header">
     <h3 class="card__title">
-      {{ cardIndex + ') ' + course.description }}
+      {{ cardIndex + ') ' + course.title }}
     </h3>
   </div>
   <div class="card__content">
@@ -29,11 +37,11 @@ class="card"
       <img
         *ngIf="isImageVisible(); else noImage"
         [src]="course.iconUrl"
-        [alt]="course.description"
+        [alt]="course.title"
       />
     </div>
     <p class="card__description">
-      {{ course.longDescription }}
+      {{ course.description }}
     </p>
   </div>
   <div class="card__footer">
