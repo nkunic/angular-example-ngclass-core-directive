@@ -47,7 +47,7 @@ export const COURSES: any = [
       'Learn Web Security Fundamentals and apply them to defend an Angular / Node Application from multiple types of attacks.',
     iconUrl:
       'https://s3-us-west-1.amazonaws.com/angular-university/course-images/security-cover-small-v2.png',
-    category: 'ADVANCED',
+    category: 'INTERMEDIATE',
     lessonsCount: 11,
   },
   {
@@ -76,7 +76,7 @@ export const COURSES: any = [
       'Complete Guide to Typescript From Scratch: Learn the language in-depth and use it to build a Node REST API.',
     iconUrl:
       'https://angular-academy.s3.amazonaws.com/thumbnails/typescript-2-small.png',
-    category: 'BEGINNER',
+    category: 'INTERMEDIATE',
   },
   {
     id: 9,
