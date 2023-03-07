@@ -1,5 +1,5 @@
 import { Component, EventEmitter } from '@angular/core';
-import { COURSES } from '../db-data';
+import { COURSES } from './model/db-data';
 import { Course } from './model/course';
 
 @Component({

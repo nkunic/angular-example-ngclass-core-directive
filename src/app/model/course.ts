@@ -1,8 +1,8 @@
 export interface Course {
   id: number;
-  description: string;
+  title: string;
   iconUrl: string;
-  longDescription: string;
+  description: string;
   category: string;
   lessonsCount: number;
 }

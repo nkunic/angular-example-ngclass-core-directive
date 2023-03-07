@@ -92,8 +92,7 @@ export const COURSES: any = [
     title: 'Angular Material Course',
     iconUrl:
       'https://s3-us-west-1.amazonaws.com/angular-university/course-images/material_design.png',
-    description:
-      'Build Applications with the official Angular Widget Library',
+    description: 'Build Applications with the official Angular Widget Library',
     category: 'ADVANCED',
   },
 ];
